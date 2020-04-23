@@ -44,12 +44,6 @@ rownames(genesNames)<- data@rowRanges@elementMetadata@listData[["ensembl_gene_id
 names(genesNames) <- "gene_name"
 
 
-write.csv(clean_counts,'/home/sergio/Projects/IVJornadas.Bioinformatica/melanoma-datathon/melanoma.datathon/clean.counts.csv')
-write.csv(genesNames,'/home/sergio/Projects/IVJornadas.Bioinformatica/melanoma-datathon/melanoma.datathon/genesNames.csv')
-write.csv(countdata,'/home/sergio/Projects/IVJornadas.Bioinformatica/melanoma-datathon/melanoma.datathon/countdata.csv')
-info_df <- as.data.frame(data@colData)
-newdf <- na.omit(df_tsne_model)
-
 ###################################################################################################################################
 
 ####### T-SNE #############
